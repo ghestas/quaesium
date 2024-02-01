@@ -1,12 +1,15 @@
 import logo from './logo.svg';
 import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
 import './App.css';
-import Tesst from './test'
+import Landing from './Landing'
+import Dashboard from './Dashboard';
+import Game from './Game';
 
 const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path='/about' element={ <Tesst /> } />
-  )
+  createRoutesFromElements([
+    <Route path='/' element={ Math.random() < 0.5 ? <Landing /> : <Dashboard /> } />,
+    <Route path='/game/:id' element={ <Game /> } />
+  ])
 );
 
 function App() {
