@@ -37,5 +37,6 @@
   },
   "devDependencies": {
     "react-router-dom": "^6.22.0"
-  }
+  },
+  "homepage":"https://ghestas.com/build"
 }
