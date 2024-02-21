@@ -1,0 +1,39 @@
+/* learn.jsx */
+
+.question-set {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.question-set .title-container {
+    margin: 0;
+    position: relative;
+}
+
+.question-set .title {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.question-set .answer-container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 10px;
+}
+
+.question-set .answer {
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    background-color: rgb(240, 240, 240);
+}
